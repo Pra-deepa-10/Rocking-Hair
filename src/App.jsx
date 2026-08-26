@@ -236,8 +236,6 @@ useEffect(() => {
 
           <div className="products-grid">
             <article className="product-card">
-              <div className="product-number">01</div>
-
               <div className="product-placeholder">
                 <img src={hairExtStraight} alt="Hair Extensions" />
               </div>
@@ -254,8 +252,6 @@ useEffect(() => {
             </article>
 
             <article className="product-card">
-              <div className="product-number">02</div>
-
               <div className="product-placeholder">
                 <img src={closureCurly} alt="Closures" />
               </div>
@@ -272,8 +268,6 @@ useEffect(() => {
             </article>
 
             <article className="product-card">
-              <div className="product-number">03</div>
-
               <div className="product-placeholder">
                 <img src={frontalStraight} alt="Frontals" />
               </div>
@@ -290,8 +284,6 @@ useEffect(() => {
             </article>
 
             <article className="product-card">
-              <div className="product-number">04</div>
-
               <div className="product-placeholder">
                 <img src={wigCurl} alt="Wigs" />
               </div>
@@ -501,7 +493,7 @@ useEffect(() => {
               <img src={frontalStraight} alt="Hair frontals" />
             </div>
 
-            <div className="gallery-item gallery-large">
+            <div id="wig-straight" className="gallery-item gallery-large">
               <img src={wigStraight} alt="Premium wigs" />
             </div>
 

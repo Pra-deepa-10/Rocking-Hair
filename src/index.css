@@ -509,16 +509,6 @@ a {
   background: var(--beige);
 }
 
-.product-number {
-  position: absolute;
-  top: 22px;
-  left: 25px;
-  z-index: 2;
-  color: var(--gold);
-  font-size: 12px;
-  letter-spacing: 0.1em;
-}
-
 .product-placeholder {
   height: 330px;
   display: flex;
@@ -937,7 +927,7 @@ a {
 
 .gallery-item {
   overflow: hidden;
-  background: var(--beige);
+  background: var(--ivory);
 }
 
 .gallery-item img {
@@ -984,6 +974,11 @@ a {
 
   .gallery-wide {
     grid-column: span 2;
+  }
+
+  #wig-straight img{
+    max-width: 270px;
+    margin-left: 10%;
   }
 }
 
