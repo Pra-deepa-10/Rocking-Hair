@@ -1111,8 +1111,8 @@ a {
 }
 
 .form-group select option {
-  background: var(--brown);
-  color: var(--ivory);
+  background: var(--ivory);
+  color: var(--brown);
 }
 
 .form-group textarea {
