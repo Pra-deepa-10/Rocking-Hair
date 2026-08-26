@@ -1,16 +1,40 @@
-# React + Vite
+# Rocking Hair
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive business website developed for **Rocking Hair**, a hair extension brand. The website showcases the brand and its offerings while providing customers with an easy way to submit enquiries.
 
-Currently, two official plugins are available:
+## 🌐 Live Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**[View Live Website](https://rocking-hair.vercel.app/)**
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Responsive and mobile-friendly design
+* Modern and professional UI
+* Hair extension showcase
+* Brand and business information
+* Customer enquiry form
+* Form validation
+* Success message after submission
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React.js
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* Vite
+* Git & GitHub
+* Vercel
+
+## 🚀 Deployment
+
+The website is deployed on **Vercel** and connected to the GitHub repository.
+
+**GitHub:** https://github.com/Pra-deepa-10/Rocking-Hair
+
+**Live Demo:** https://rocking-hair.vercel.app/
+
+## 👩‍💻 Author
+
+**Pradeepa S**
+Frontend Developer | React.js | JavaScript
