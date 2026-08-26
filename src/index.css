@@ -56,19 +56,20 @@ a {
 
 .logo {
   display: flex;
-  gap: 0;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px;
+  display: block;
 }
 
 .logo span {
   color: var(--brown);
   font-family: "Playfair Display", serif;
-  font-size: larger;
+  font-size: 14px;
   font-weight: 700;
-  margin: 50px 0;
-}
-.logo img {
-  width: 175px;
-  display: block;
+  white-space: nowrap;
 }
 
 .nav-links {
@@ -79,7 +80,7 @@ a {
 
 .nav-links a {
   position: relative;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -130,7 +131,7 @@ a {
 /* Hero */
 
 .hero {
-  min-height: 650px;
+  min-height: 500px;
   padding: 80px 8%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -143,14 +144,15 @@ a {
 }
 
 .hero-visual {
-  height: 500px;
+  height: 350px;
+  max-width:100%;
   overflow: hidden;
 }
 
 .hero-visual img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   display: block;
 }
 
@@ -178,10 +180,6 @@ a {
   width: fit-content;
 }
 
-.hero img{
-  max-height: 450px;
-  max-width:100%;
-}
 
 /* Mobile */
 
@@ -195,7 +193,7 @@ a {
   }
 
   .logo img {
-    width: 145px;
+    max-width: 145px;
   }
 
   .enquire-btn {
@@ -211,7 +209,7 @@ a {
 }
 
 .hero-visual {
-  height: 420px;
+  max-height: 240px;
 }
 
   .hero h1 {
@@ -539,7 +537,7 @@ a {
 .product-placeholder img {
   max-width: 100%;
   max-height: 100%;
-  object-fit:fill;
+  object-fit:contain;
   display: block;
 }
 
@@ -640,7 +638,6 @@ a {
 .quality-item {
   display: grid;
   grid-template-columns: 55px 1fr;
-  gap: 20px;
   padding: 32px 0;
   border-bottom: 1px solid rgba(201, 163, 79, 0.35);
 }
@@ -683,15 +680,15 @@ a {
 .custom-section {
   padding: 130px 8%;
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
+  grid-template-columns: 0.90fr 1.10fr;
   gap: 100px;
   align-items: center;
   background: var(--ivory);
 }
 
 .custom-visual {
-  height: 500px;
-  width: 700px;
+  height: 400px;
+  width: 100%;
   overflow: hidden;
   background: var(--beige);
 }
@@ -699,7 +696,7 @@ a {
 .custom-visual img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:fill;
   display: block;
 }
 
@@ -781,7 +778,7 @@ a {
   }
 
   .custom-visual {
-    min-height: 380px;
+    max-height: 280px;
   }
 
   .custom-circle {
@@ -926,7 +923,7 @@ a {
 }
 
 .gallery-heading > p {
-  max-width: 800px;
+  max-width: 600px;
   color: #5d5047;
   line-height: 1.8;
 }
@@ -946,7 +943,7 @@ a {
 .gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   display: block;
   transition: transform 0.5s ease;
 }
@@ -1182,7 +1179,7 @@ a {
 }
 
 .footer-brand {
-  max-width: 360px;
+  max-width: 300px;
 }
 
 .footer-brand img {
@@ -1242,6 +1239,9 @@ a {
 }
 
 @media (max-width: 900px) {
+  .footer-brand img{
+    max-width: 100px;
+  }
   .footer-main {
     grid-template-columns: 1fr 1fr;
     gap: 50px;

@@ -505,7 +505,7 @@ useEffect(() => {
               <img src={wigStraight} alt="Premium wigs" />
             </div>
 
-            <div className="gallery-item gallery-large">
+            <div className="gallery-item">
               <img src={wigCurl} alt="Premium wigs" />
             </div>
 
@@ -698,7 +698,7 @@ useEffect(() => {
               <div>
                 <h3>Call / WhatsApp Us</h3>
                 <a href="tel:+919994532455">
-                  +91 919994532455
+                  +91 9994532455
                 </a>
               </div>
             </div>
