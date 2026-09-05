@@ -697,6 +697,7 @@ useEffect(() => {
                 <div style={{ display: 'flex', gap: '8px' }}>
                   <select                        //country code selector
                     name="countryCode" 
+                    aria-label="Country code"
                     value={formData.countryCode} 
                     onChange={handleChange}
                     style={{ width: '85px' }}
