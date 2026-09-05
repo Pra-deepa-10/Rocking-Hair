@@ -1,5 +1,7 @@
 import { sendEnquiryEmail } from "./email";
 import { useState, useEffect } from "react";
+import PrivacyPolicy from "./PrivacyPolicy";
+import Terms from "./Terms";
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 import { FaWhatsapp, FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
@@ -119,6 +121,13 @@ const countryCodes = [
 ];
 
 function App() {
+   if (window.location.pathname === "/privacy-policy") {
+    return <PrivacyPolicy />;
+  }
+   if (window.location.pathname === "/terms") {
+    return <Terms />;
+  }
+
   const[submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
   name: "",
@@ -128,7 +137,7 @@ function App() {
   countryName: 'IN',
   phone: "",
   country: "",
-  product: "Hair Extensions",
+  product: "hair-extensions",
   message: "",
 });
 
@@ -215,6 +224,7 @@ useEffect(() => {
         <a href="#enquiry" className="enquire-btn">
           ENQUIRE NOW
         </a>
+        
       </header>
 
       {/* Temporary Hero */}
@@ -789,6 +799,8 @@ useEffect(() => {
               <a href="#care">Care Guide</a>
               <a href="#gallery">Gallery</a>
               <a href="#enquiry">Enquire Now</a>
+              <a href="/privacy-policy">Privacy Policy</a>
+              <a href="/terms">Terms & Disclaimer</a>
             </div>
 
             <div className="footer-column">

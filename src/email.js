@@ -4,7 +4,7 @@ export const sendEnquiryEmail = async (formData) => {
   const templateParams = {
     name: formData.name,
     email: formData.email,
-    phone: formData.phone,
+    phone: `${formData.dialCode} ${formData.phone}`,
     country: formData.country,
     product: formData.product,
     message: formData.message,
