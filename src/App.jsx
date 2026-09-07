@@ -2,6 +2,7 @@ import { sendEnquiryEmail } from "./email";
 import { useState, useEffect } from "react";
 import PrivacyPolicy from "./PrivacyPolicy";
 import Terms from "./Terms";
+import ShippingInfo from "./ShippingInfo";
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 import { FaWhatsapp, FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
@@ -126,6 +127,9 @@ function App() {
   }
    if (window.location.pathname === "/terms") {
     return <Terms />;
+  }
+  if (window.location.pathname === "/shipping") {
+    return <ShippingInfo />
   }
 
   const[submitted, setSubmitted] = useState(false);
@@ -341,7 +345,7 @@ useEffect(() => {
              With knowledge and experience passed down through generations,
              our team understands the value of carefully selecting and working
              with quality human hair, sourced mainly from temples across South India, 
-             including Madurai, Karaikudi and Samayapuram.
+             including Tirupati, Madurai, Karaikudi, Samayapuram and Bannari Mariamman Temple.
             </p>
           </div>
         </section>
@@ -800,6 +804,7 @@ useEffect(() => {
               <a href="#care">Care Guide</a>
               <a href="#gallery">Gallery</a>
               <a href="#enquiry">Enquire Now</a>
+              <a href="/shipping">Shipping Information</a>
               <a href="/privacy-policy">Privacy Policy</a>
               <a href="/terms">Terms & Disclaimer</a>
             </div>
@@ -820,8 +825,8 @@ useEffect(() => {
                 <h3><FiMapPin style={{marginRight: '6px', color: '#D4AF37'}} />
                  India Address</h3>
                 <p>
-                  M247, NEW ASTC HUDCO, 100 Feet Road,<br />
-                  Thally Road, Hosur, Tamil Nadu,<br />
+                  SECOND FLOOR, SY NO 921/1 A1,<br />
+                  Nanjundeshwar Nagar, Hosur, Tamil Nadu,<br />
                   India - 635109
                 </p>
               </div>
@@ -841,6 +846,7 @@ useEffect(() => {
                   +91 9994532455
                 </a>
               </div>
+              <p>Business Hours: 9:00 AM – 6:00 PM</p>
             </div>
             <div className="social-section">
               <h3>Follow Us</h3>
