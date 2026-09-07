@@ -7,7 +7,7 @@ import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 import { FaWhatsapp, FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 import logo from "./assets/rocking-hair-logo.png";
-import heroHair from "./assets/product-images/hero-hair.jpeg";
+import heroHair from "./assets/product-images/hero-hair.webp";
 import closureStraight from "./assets/product-images/closure-straight.jpeg";
 import closureCurly from "./assets/product-images/closure-curly.jpeg";
 import frontalStraight from "./assets/product-images/frontal-straight.jpeg";
@@ -155,6 +155,28 @@ useEffect(() => {
   return () => clearTimeout(timer);
 }, [submitted]);
 
+useEffect(() => {
+  const revealElements = document.querySelectorAll(".reveal");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("reveal-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.15,
+    }
+  );
+
+  revealElements.forEach((element) => observer.observe(element));
+
+  return () => observer.disconnect();
+}, []);
+
   const handleSubmit = async (event) => {
   event.preventDefault();
 
@@ -256,7 +278,7 @@ useEffect(() => {
           </div>
         </section>
 
-        <section className="benefits" id="why-us">
+        <section className="benefits reveal" id="why-us">
           <div className="section-heading">
             <p className="eyebrow">THE ROCKING HAIR STANDARD</p>
 
@@ -305,8 +327,9 @@ useEffect(() => {
             </div>
           </div>
         </section>
-        <section className="about-section" id="about">
-          <div className="about-content">
+        <section className="about-section reveal" id="about">
+          <div className="about-content reveal reveal-left
+          ">
             <p className="eyebrow">ABOUT ROCKING HAIR</p>
 
             <h2>
@@ -332,7 +355,7 @@ useEffect(() => {
             </a>
           </div>
 
-          <div className="about-highlight">
+          <div className="about-highlight reveal">
             <span>OUR HERITAGE</span>
 
             <h3>
@@ -350,7 +373,7 @@ useEffect(() => {
           </div>
         </section>
 
-        <section className="products-section" id="products">
+        <section className="products-section reveal" id="products">
           <div className="products-heading">
             <div>
               <p className="eyebrow">OUR COLLECTION</p>
@@ -368,7 +391,7 @@ useEffect(() => {
           </div>
 
           <div className="products-grid">
-            <article className="product-card">
+            <article className="product-card reveal">
               <div className="product-placeholder">
                 <img src={hairExtStraight} alt="Hair Extensions" />
               </div>
@@ -384,7 +407,7 @@ useEffect(() => {
               </div>
             </article>
 
-            <article className="product-card">
+            <article className="product-card reveal">
               <div className="product-placeholder">
                 <img src={closureCurly} alt="Closures" />
               </div>
@@ -400,7 +423,7 @@ useEffect(() => {
               </div>
             </article>
 
-            <article className="product-card">
+            <article className="product-card reveal">
               <div className="product-placeholder">
                 <img src={frontalStraight} alt="Frontals" />
               </div>
@@ -416,7 +439,7 @@ useEffect(() => {
               </div>
             </article>
 
-            <article className="product-card">
+            <article className="product-card reveal">
               <div className="product-placeholder">
                 <img src={wigCurl} alt="Wigs" />
               </div>
@@ -434,7 +457,7 @@ useEffect(() => {
           </div>
         </section>
 
-        <section className="quality-section" id="quality">
+        <section className="quality-section reveal" id="quality">
           <div className="quality-intro">
             <p className="eyebrow">THE ART OF QUALITY</p>
 
@@ -491,7 +514,7 @@ useEffect(() => {
           </div>
         </section>
 
-        <section className="custom-section" id="custom">
+        <section className="custom-section reveal" id="custom">
           <div className="custom-visual">
             <img
               src={customHair}
@@ -539,7 +562,7 @@ useEffect(() => {
           </div>
         </section>
 
-        <section className="care-section" id="care">
+        <section className="care-section reveal reveal-right" id="care">
           <div className="care-heading">
             <p className="eyebrow">CARE GUIDE</p>
 
@@ -584,7 +607,7 @@ useEffect(() => {
           </div>
         </section>
 
-        <section className="gallery-section" id="gallery">
+        <section className="gallery-section reveal" id="gallery">
           <div className="gallery-heading">
             <div>
               <p className="eyebrow">THE COLLECTION IN FOCUS</p>
@@ -602,49 +625,49 @@ useEffect(() => {
           </div>
 
           <div className="gallery-grid">
-            <div className="gallery-item gallery-wide gallery-large">
+            <div className="gallery-item gallery-wide gallery-large reveal">
               <img src={Showcase} alt="Bundles" />
             </div>
 
-            <div className="gallery-item">
+            <div className="gallery-item reveal">
               <img src={hairExtStraight} alt="Hair extensions" />
             </div>
 
-            <div className="gallery-item">
+            <div className="gallery-item reveal">
               <img src={hairExtCurl} alt="Hair extensions" />
             </div>
 
-            <div className="gallery-item">
+            <div className="gallery-item reveal">
               <img src={frontalWave} alt="Hair frontals" />
             </div>
 
-            <div className="gallery-item">
+            <div className="gallery-item reveal">
               <img src={waveBundle} alt="Hair Extensions" />
             </div>
 
-            <div className="gallery-item">
+            <div className="gallery-item reveal">
               <img src={frontalStraight} alt="Hair frontals" />
             </div>
 
-            <div id="wig-straight" className="gallery-item gallery-large">
+            <div id="wig-straight" className="gallery-item gallery-large reveal">
               <img src={wigStraight} alt="Premium wigs" />
             </div>
 
-            <div className="gallery-item">
+            <div className="gallery-item reveal">
               <img src={wigCurl} alt="Premium wigs" />
             </div>
 
-            <div className="gallery-item">
+            <div className="gallery-item reveal">
               <img src={closureCurly} alt="closures" />
             </div>
 
-            <div className="gallery-item">
+            <div className="gallery-item reveal">
               <img src={closureStraight} alt="closures" />
             </div>
           </div>
         </section>
 
-        <section className="enquiry-section" id="enquiry">
+        <section className="enquiry-section reveal" id="enquiry">
           <div className="enquiry-intro">
             <p className="eyebrow">GET IN TOUCH</p>
 
@@ -668,7 +691,7 @@ useEffect(() => {
 
           <form className="enquiry-form" onSubmit={handleSubmit}>
             <div className="form-row">
-              <div className="form-group">
+              <div className="form-group reveal">
                 <label htmlFor="name">Your Name</label>
                 <input
                   type="text"
@@ -681,7 +704,7 @@ useEffect(() => {
                 />
               </div>
 
-              <div className="form-group">
+              <div className="form-group reveal">
                 <label htmlFor="email">Email Address</label>
                 <input
                   type="email"
@@ -696,7 +719,7 @@ useEffect(() => {
             </div>
 
             <div className="form-row">
-              <div className="form-group">
+              <div className="form-group reveal">
                 <label htmlFor="phone">Phone Number</label>
                 <div style={{ display: 'flex', gap: '8px' }}>
                   <select                        //country code selector
@@ -719,7 +742,7 @@ useEffect(() => {
                 </div>
               </div>
 
-              <div className="form-group">
+              <div className="form-group reveal">
                 <label htmlFor="country">Country</label>
                 <select id="country" name="country" 
                 value={formData.country} 
@@ -732,7 +755,7 @@ useEffect(() => {
               </div>
             </div>
 
-            <div className="form-group">
+            <div className="form-group reveal">
               <label htmlFor="product">Product Interest</label>
               <select id="product" name="product" 
               value={formData.product}
@@ -745,7 +768,7 @@ useEffect(() => {
               </select>
             </div>
 
-            <div className="form-group">
+            <div className="form-group reveal">
               <label htmlFor="message">Your Enquiry</label>
               <textarea
                 id="message"
