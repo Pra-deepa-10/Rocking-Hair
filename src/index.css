@@ -884,7 +884,9 @@ a {
   }
 }
 
-/* Gallery */
+/* =========================================================
+   GALLERY
+========================================================= */
 
 .gallery-section {
   padding: 130px 8%;
@@ -918,83 +920,67 @@ a {
   line-height: 1.8;
 }
 
+/* =========================================================
+   MASONRY GALLERY - FIXED
+========================================================= */
+
 .gallery-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr 0.8fr;
-  grid-auto-rows: 300px;
-  gap: 18px;
+  column-count: 3;
+  column-gap: 18px;
+  width: 100%;
 }
 
 .gallery-item {
+  width: 100%;
+  margin-bottom: 18px;
   overflow: hidden;
-  background: var(--ivory);
+  background: #f6f1eb;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  border-radius: 4px;
 }
 
 .gallery-item img {
   width: 100%;
-  height: 100%;
-  object-fit: fill;
+  height: auto;
   display: block;
+  object-fit: cover; /* FIX 1: was contain = blank gaps */
   transition: transform 0.5s ease;
 }
 
 .gallery-item:hover img {
-  transform: scale(1.04);
+  transform: scale(1.03);
 }
 
 .gallery-large {
-  grid-row: span 2;
+  break-inside: avoid;
 }
 
-.gallery-wide {
-  grid-column: span 2;
+/* =========================================================
+   TABLET
+========================================================= */
+@media (max-width: 900px) {
+  .gallery-section { padding: 100px 7%; }
+  .gallery-heading { gap: 40px; margin-bottom: 50px; }
+  .gallery-grid { column-count: 2; }
 }
 
-@media (max-width: 800px) {
-  .gallery-section {
-    padding: 90px 7%;
-  }
-
-  .gallery-heading {
-    display: block;
-  }
-
-  .gallery-heading > p {
-    margin-top: 25px;
-  }
-
-  .gallery-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 250px;
-  }
-
-  .gallery-large {
-    grid-row: span 1;
-  }
-
-  .gallery-wide {
-    grid-column: span 2;
-  }
-
-  #wig-straight img{
-    max-width: 270px;
-    margin-left: 10%;
-  }
+/* =========================================================
+   MOBILE
+========================================================= */
+@media (max-width: 600px) {
+  .gallery-section { padding: 80px 6%; }
+  .gallery-heading { display: block; margin-bottom: 45px; }
+  .gallery-heading > p { margin-top: 25px; max-width: 100%; }
+  .gallery-grid { column-count: 1; }
 }
 
-@media (max-width: 500px) {
-  .gallery-section {
-    padding: 75px 6%;
-  }
-
-  .gallery-grid {
-    grid-template-columns: 1fr;
-    grid-auto-rows: 280px;
-  }
-
-  .gallery-wide {
-    grid-column: span 1;
-  }
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+@media (max-width: 400px) {
+  .gallery-section { padding: 65px 5%; }
+  .gallery-heading h2 { font-size: 40px; }
 }
 
 /* Enquiry */
@@ -1686,3 +1672,32 @@ a {
   }
 }
 
+/* PRODUCT CARD ACTIONS */
+
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.product-actions a {
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.product-actions a:first-child {
+  color: var(--brown);
+}
+
+.product-actions a:last-child {
+  color: var(--brown);
+}
+
+.product-actions a:hover {
+  transform: translateX(4px);
+}

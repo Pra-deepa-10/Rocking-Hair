@@ -1,5 +1,6 @@
 import { sendEnquiryEmail } from "./email";
 import { useState, useEffect } from "react";
+import Gallery from "./Gallery";
 import PrivacyPolicy from "./PrivacyPolicy";
 import Terms from "./Terms";
 import ShippingInfo from "./ShippingInfo";
@@ -8,17 +9,13 @@ import { FaWhatsapp, FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/
 
 import logo from "./assets/rocking-hair-logo.png";
 import heroHair from "./assets/product-images/hero-hair.webp";
-import closureStraight from "./assets/product-images/closure-straight.jpeg";
-import closureCurly from "./assets/product-images/closure-curly.jpeg";
-import frontalStraight from "./assets/product-images/frontal-straight.jpeg";
-import frontalWave from "./assets/product-images/frontal-wave.jpeg";
-import hairExtStraight from "./assets/product-images/hair-extension-straight.jpeg";
-import hairExtCurl from "./assets/product-images/hair-extension-wavy.jpeg";
-import wigStraight from "./assets/product-images/wig-straight.jpeg";
-import wigCurl from "./assets/product-images/wig-curly.jpeg";
-import Showcase from "./assets/product-images/Showcase-hair.jpeg";
-import customHair from "./assets/product-images/custom-hair.jpg";
-import waveBundle from "./assets/product-images/wave-bundle.jpeg";
+import customHair from "./assets/product-images/custom-hair.webp";
+
+import closureStraightPair from "./assets/product-images/closure-straight-pair.webp";
+import straightBundlesBlack from "./assets/product-images/straight-bundles-black.webp";
+import frontalBodyBrown from "./assets/product-images/frontal-body-brown.webp";
+import wigStraightFull from "./assets/product-images/wig-straight-full.webp";
+
 
 const countries = [
   "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda",
@@ -115,10 +112,9 @@ const countryCodes = [
   { code: "+676", name: "TO" }, { code: "+1", name: "TT" }, { code: "+216", name: "TN" },
   { code: "+90", name: "TR" }, { code: "+993", name: "TM" }, { code: "+256", name: "UG" },
   { code: "+380", name: "UA" }, { code: "+971", name: "AE" }, { code: "+44", name: "GB" },
-  { code: "+255", name: "TZ" }, { code: "+1", name: "US" }, { code: "+598", name: "UY" },
+  { code: "+1", name: "US" }, { code: "+598", name: "UY" }, { code: "+263", name: "ZW" },
   { code: "+998", name: "UZ" }, { code: "+678", name: "VU" }, { code: "+58", name: "VE" },
   { code: "+84", name: "VN" }, { code: "+967", name: "YE" }, { code: "+260", name: "ZM" },
-  { code: "+263", name: "ZW" }
 ];
 
 function App() {
@@ -393,7 +389,7 @@ useEffect(() => {
           <div className="products-grid">
             <article className="product-card reveal">
               <div className="product-placeholder">
-                <img src={hairExtStraight} alt="Hair Extensions" />
+                <img src={straightBundlesBlack} alt="Hair Extensions" />
               </div>
 
               <div className="product-info">
@@ -402,14 +398,16 @@ useEffect(() => {
                   Add length, volume and movement with beautifully
                   crafted hair extensions.
                 </p>
-
-                <a href="#enquiry">ENQUIRE →</a>
+                <div className="product-actions">
+                  <a href="#enquiry">ENQUIRE →</a>
+                  <a href="#gallery">VIEW MORE →</a>
+                </div>
               </div>
             </article>
 
             <article className="product-card reveal">
               <div className="product-placeholder">
-                <img src={closureCurly} alt="Closures" />
+                <img src={closureStraightPair} alt="Closures" />
               </div>
 
               <div className="product-info">
@@ -419,13 +417,16 @@ useEffect(() => {
                   seamless styling possibilities.
                 </p>
 
-                <a href="#enquiry">ENQUIRE →</a>
+                <div className="product-actions">
+                  <a href="#enquiry">ENQUIRE →</a>
+                  <a href="#gallery">VIEW MORE →</a>
+                </div>
               </div>
             </article>
 
             <article className="product-card reveal">
               <div className="product-placeholder">
-                <img src={frontalStraight} alt="Frontals" />
+                <img src={frontalBodyBrown} alt="Frontals" />
               </div>
 
               <div className="product-info">
@@ -435,13 +436,16 @@ useEffect(() => {
                   for a refined, natural appearance.
                 </p>
 
-                <a href="#enquiry">ENQUIRE →</a>
+                <div className="product-actions">
+                  <a href="#enquiry">ENQUIRE →</a>
+                  <a href="#gallery">VIEW MORE →</a>
+                </div>
               </div>
             </article>
 
             <article className="product-card reveal">
               <div className="product-placeholder">
-                <img src={wigCurl} alt="Wigs" />
+                <img src={wigStraightFull} alt="Wigs" />
               </div>
 
               <div className="product-info">
@@ -451,7 +455,10 @@ useEffect(() => {
                   your individual look.
                 </p>
 
-                <a href="#enquiry">ENQUIRE →</a>
+                <div className="product-actions">
+                  <a href="#enquiry">ENQUIRE →</a>
+                  <a href="#gallery">VIEW MORE →</a>
+                </div>
               </div>
             </article>
           </div>
@@ -607,65 +614,7 @@ useEffect(() => {
           </div>
         </section>
 
-        <section className="gallery-section reveal" id="gallery">
-          <div className="gallery-heading">
-            <div>
-              <p className="eyebrow">THE COLLECTION IN FOCUS</p>
-
-              <h2>
-                Beauty in
-                <span> every detail.</span>
-              </h2>
-            </div>
-
-            <p>
-              Discover the textures, movement and versatility that define
-              the Rocking Hair experience.
-            </p>
-          </div>
-
-          <div className="gallery-grid">
-            <div className="gallery-item gallery-wide gallery-large reveal">
-              <img src={Showcase} alt="Bundles" />
-            </div>
-
-            <div className="gallery-item reveal">
-              <img src={hairExtStraight} alt="Hair extensions" />
-            </div>
-
-            <div className="gallery-item reveal">
-              <img src={hairExtCurl} alt="Hair extensions" />
-            </div>
-
-            <div className="gallery-item reveal">
-              <img src={frontalWave} alt="Hair frontals" />
-            </div>
-
-            <div className="gallery-item reveal">
-              <img src={waveBundle} alt="Hair Extensions" />
-            </div>
-
-            <div className="gallery-item reveal">
-              <img src={frontalStraight} alt="Hair frontals" />
-            </div>
-
-            <div id="wig-straight" className="gallery-item gallery-large reveal">
-              <img src={wigStraight} alt="Premium wigs" />
-            </div>
-
-            <div className="gallery-item reveal">
-              <img src={wigCurl} alt="Premium wigs" />
-            </div>
-
-            <div className="gallery-item reveal">
-              <img src={closureCurly} alt="closures" />
-            </div>
-
-            <div className="gallery-item reveal">
-              <img src={closureStraight} alt="closures" />
-            </div>
-          </div>
-        </section>
+        <Gallery />
 
         <section className="enquiry-section reveal" id="enquiry">
           <div className="enquiry-intro">
