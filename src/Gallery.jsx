@@ -20,7 +20,7 @@ import frontalBodyWaveBlonde from "./assets/product-images/frontal-body-wave-blo
 import frontalWaveTransparentLace from "./assets/product-images/frontal-wave-transparent-lace.webp";
 import goldWaveWig from "./assets/product-images/gold-wave-wig.webp";
 import multicolorWigs from "./assets/product-images/multicolor-wigs.webp";
-import wigNaturalWave from "./assets/product-images/wig-natural-wave.webp";
+import frontalStraight from "./assets/product-images/frontal-straight.webp";
 import wigStraightFull from "./assets/product-images/wig-straight-full.webp";
 import wigStraightFullBack from "./assets/product-images/wig-straight-full-back.webp";
 import wigStraightGluelessFront from "./assets/product-images/wig-straight-glueless-front-view.webp";
@@ -49,7 +49,7 @@ const galleryImages = [
   { src: straightBundlesBlack, alt: "Straight black bundles" },
   { src: tapeInExtensionsCollectionWhite, alt: "Tape in extensions" },
   { src: wavyBundles, alt: "Wavy bundles" },
-  { src: wigNaturalWave, alt: "Natural wave wig" },
+  { src: frontalStraight, alt: "Straight frontals" },
   { src: wigStraightFull, alt: "Premium straight wig", large: true },
   { src: wigStraightFullBack, alt: "Straight wig back" },
   { src: wigStraightGluelessFront, alt: "Glueless straight wig" },

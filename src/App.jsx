@@ -11,10 +11,10 @@ import logo from "./assets/rocking-hair-logo.png";
 import heroHair from "./assets/product-images/hero-hair.webp";
 import customHair from "./assets/product-images/custom-hair.webp";
 
-import closureStraightPair from "./assets/product-images/closure-straight-pair.webp";
+import closureCurlBlack from "./assets/product-images/closure-curl-black.webp";
 import straightBundlesBlack from "./assets/product-images/straight-bundles-black.webp";
-import frontalBodyBrown from "./assets/product-images/frontal-body-brown.webp";
-import wigStraightFull from "./assets/product-images/wig-straight-full.webp";
+import frontalStraight from "./assets/product-images/frontal-straight.webp";
+import multicolorWigs from "./assets/product-images/multicolor-wigs.webp";
 
 
 const countries = [
@@ -407,7 +407,7 @@ useEffect(() => {
 
             <article className="product-card reveal">
               <div className="product-placeholder">
-                <img src={closureStraightPair} alt="Closures" />
+                <img src={closureCurlBlack} alt="Closures" />
               </div>
 
               <div className="product-info">
@@ -426,7 +426,7 @@ useEffect(() => {
 
             <article className="product-card reveal">
               <div className="product-placeholder">
-                <img src={frontalBodyBrown} alt="Frontals" />
+                <img src={frontalStraight} alt="Frontals" />
               </div>
 
               <div className="product-info">
@@ -445,7 +445,7 @@ useEffect(() => {
 
             <article className="product-card reveal">
               <div className="product-placeholder">
-                <img src={wigStraightFull} alt="Wigs" />
+                <img src={multicolorWigs} alt="Wigs" />
               </div>
 
               <div className="product-info">
