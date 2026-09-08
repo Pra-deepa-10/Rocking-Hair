@@ -1,0 +1,113 @@
+.products-section {
+  padding: 130px 8%;
+  background: var(--ivory);
+}
+.products-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 60px;
+  margin-bottom: 65px;
+}
+.products-heading h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(45px, 5vw, 70px);
+  line-height: 1.1;
+  font-weight: 600;
+}
+.products-heading h2 span {
+  display: block;
+  color: var(--gold);
+  font-style: italic;
+}
+.products-heading > p {
+  max-width: 420px;
+  color: #5d5047;
+  line-height: 1.8;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.product-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--beige);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(36, 26, 20, 0.12);
+}
+.product-placeholder {
+  height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e4dacb;
+}
+.product-placeholder span {
+  color: rgba(36, 26, 20, 0.35);
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  letter-spacing: 0.12em;
+}
+.product-placeholder img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+  display: block;
+  transition: transform 0.6s ease;
+}
+.product-card:hover .product-placeholder img {
+  transform: scale(1.04);
+}
+.product-info {
+  padding: 30px;
+}
+.product-info h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+.product-info p {
+  max-width: 500px;
+  margin: 12px 0 22px;
+  color: #5d5047;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.product-info a {
+  color: var(--brown);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+.product-info a:hover {
+  color: #9b7836;
+}
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 18px;
+}
+.product-actions a {
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.product-actions a:hover {
+  transform: translateX(4px);
+}
+@media (max-width: 700px) {
+  .products-section { padding: 90px 6%; }
+  .products-heading { display: block; }
+  .products-heading > p { margin-top: 25px; }
+  .products-grid { grid-template-columns: 1fr; }
+  .product-placeholder { height: 280px; }
+}
