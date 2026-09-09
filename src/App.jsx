@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import FullGallery from "./FullGallery";
 import PrivacyPolicy from "./PrivacyPolicy";
 import Terms from "./Terms";
 import ShippingInfo from "./ShippingInfo";
@@ -17,6 +18,11 @@ import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 
 function App() {
+  const path = typeof window !== 'undefined' ? window.location.pathname : '';
+  if (path === "/gallery" || path === "/gallery/") {
+    return <FullGallery />;
+  }
+  
   if (window.location.pathname === "/privacy-policy") {
     return <PrivacyPolicy />;
   }
@@ -49,10 +55,10 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <Benefits />
-        <About />
-        <Products />
         <VideoSection />
+        <Benefits />
+        <Products />
+        <About />
         <Quality />
         <Custom />
         <Care />

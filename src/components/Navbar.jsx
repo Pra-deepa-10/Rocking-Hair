@@ -13,15 +13,15 @@ export default function Navbar() {
           <span>ROCKING HAIR</span>
         </a>
         <nav className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About Us</a>
-          <a href="#products">Our Products</a>
-          <a href="#why-us">Why Us</a>
-          <a href="#care">Care Guide</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact">Contact Us</a>
+          <a href="/">Home</a>
+          <a href="/#about">About Us</a>
+          <a href="/#products">Our Products</a>
+          <a href="/#why-us">Why Us</a>
+          <a href="/#care">Care Guide</a>
+          <a href="/gallery">Gallery</a>
+          <a href="/#contact">Contact Us</a>
         </nav>
-        <a href="#enquiry" className="enquire-btn">
+        <a href="/#enquiry" className="enquire-btn">
           ENQUIRE NOW
         </a>
       </header>

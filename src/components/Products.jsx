@@ -1,10 +1,10 @@
 import "./Products.css";
-import closureCurlBlack from "../assets/product-images/closure-curl-black.webp";
-import straightBundlesBlack from "../assets/product-images/straight-bundles-black.webp";
-import frontal4 from "../assets/product-images/frontal-4.webp";
-import multicolorWigs from "../assets/product-images/multicolor-wigs.webp";
-import iTipsImage from "../assets/product-images/i-tips-1.webp";
-import clipInImage from "../assets/product-images/clip-on-extension-1.webp";
+import closures from "../assets/product-images/closure-5.webp";
+import extensions from "../assets/product-images/bundle-straight.webp";
+import frontals from "../assets/product-images/frontal-4.webp";
+import wigs from "../assets/product-images/wig-16.webp";
+import iTips from "../assets/product-images/i-tips-1.webp";
+import clipInExtension from "../assets/product-images/clip-in-extension-1.webp";
 
 export default function Products() {
   return (
@@ -25,7 +25,7 @@ export default function Products() {
       <div className="products-grid">
         <article className="product-card reveal">
           <div className="product-placeholder">
-            <img src={straightBundlesBlack} alt="Hair Extensions" />
+            <img src={extensions} alt="Hair Extensions" />
           </div>
           <div className="product-info">
             <h3>Hair Extensions</h3>
@@ -38,7 +38,7 @@ export default function Products() {
         </article>
         <article className="product-card reveal">
           <div className="product-placeholder">
-            <img src={closureCurlBlack} alt="Closures" />
+            <img src={closures} alt="Closures" />
           </div>
           <div className="product-info">
             <h3>Closures</h3>
@@ -51,7 +51,7 @@ export default function Products() {
         </article>
         <article className="product-card reveal">
           <div className="product-placeholder">
-            <img src={frontal4} alt="Frontals" />
+            <img src={frontals} alt="Frontals" />
           </div>
           <div className="product-info">
             <h3>Frontals</h3>
@@ -64,7 +64,7 @@ export default function Products() {
         </article>
         <article className="product-card reveal">
           <div className="product-placeholder">
-            <img src={multicolorWigs} alt="Wigs" />
+            <img src={wigs} alt="Wigs" />
           </div>
           <div className="product-info">
             <h3>Wigs</h3>
@@ -77,7 +77,7 @@ export default function Products() {
         </article>
         <article className="product-card reveal">
           <div className="product-placeholder">
-            <img src={iTipsImage} alt="I-Tips Extensions" />
+            <img src={iTips} alt="I-Tips Extensions" />
           </div>
           <div className="product-info">
             <h3>I-Tips</h3>
@@ -90,7 +90,7 @@ export default function Products() {
         </article>
         <article className="product-card reveal">
           <div className="product-placeholder">
-            <img src={clipInImage} alt="Clip-in Extensions" />
+            <img src={clipInExtension} alt="Clip-in Extensions" />
           </div>
           <div className="product-info">
             <h3>Clip-in Extensions</h3>

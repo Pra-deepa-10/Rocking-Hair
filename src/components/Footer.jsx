@@ -14,15 +14,15 @@ export default function Footer() {
         </div>
         <div className="footer-column">
           <h3>Explore</h3>
-          <a href="#home">Home</a>
-          <a href="#about">About Us</a>
-          <a href="#products">Our Products</a>
-          <a href="#why-us">Why Us</a>
+          <a href="/#home">Home</a>
+          <a href="/#about">About Us</a>
+          <a href="/#products">Our Products</a>
+          <a href="/#why-us">Why Us</a>
         </div>
         <div className="footer-column">
           <h3>Discover</h3>
-          <a href="#care">Care Guide</a>
-          <a href="#gallery">Gallery</a>
+          <a href="/#care">Care Guide</a>
+          <a href="/gallery">Gallery</a>
           <a href="#enquiry">Enquire Now</a>
           <a href="/shipping">Shipping Information</a>
           <a href="/privacy-policy">Privacy Policy</a>
@@ -30,10 +30,10 @@ export default function Footer() {
         </div>
         <div className="footer-column">
           <h3>Our Collection</h3>
-          <a href="#products">Hair Extensions</a>
-          <a href="#products">Closures</a>
-          <a href="#products">Frontals</a>
-          <a href="#products">Wigs</a>
+          <a href="/#products">Hair Extensions</a>
+          <a href="/#products">Closures</a>
+          <a href="/#products">Frontals</a>
+          <a href="/#products">Wigs</a>
         </div>
       </div>
       <div className="footer-contact-bar">

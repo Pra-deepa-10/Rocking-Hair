@@ -5,62 +5,59 @@ const imageModules = import.meta.glob(
   { eager: true, import: "default" }
 );
 
-const customAlts = {
-  "closure-blonde-body-wave": "Blonde body wave closure",
-  "closure-body-wave": "Body wave closure",
-  "closure-body-wave-transparent-lace": "Body wave transparent lace closure",
-  "closure-curl-black": "Black curly closure",
-  "closure-straight-pair": "Straight hair closures",
-  "closure-straight-transparent-lace-back-view": "Straight transparent lace back",
-  "closure-straight-transparent-lace-front-view": "Straight transparent lace front",
-  "closure-wavy-pair": "Wavy closures",
-  "curly-bundles-weft": "Curly bundles",
-  "extension-curl": "Curly extensions",
-  "extension-white": "White extensions",
-  "frontal-body-brown": "Brown body wave frontal",
-  "frontal-body-wave-blonde": "Blonde body wave frontal",
-  "frontal-wave-transparent-lace": "Wave transparent lace frontal",
-  "gold-wave-wig": "Gold wave wig",
-  "hair-extensions": "Hair extensions",
-  "multicolor-wigs": "Multicolor wigs",
-  "straight-bundles-black": "Straight black bundles",
-  "tape-in-extensions-collection-white": "Tape in extensions",
-  "wavy-bundles": "Wavy bundles",
-  "frontal-straight": "Straight frontals",
-  "wig-straight-full": "Premium straight wig",
-  "wig-straight-full-back": "Straight wig back",
-  "wig-straight-glueless-front-view": "Glueless straight wig",
-  "wig-white": "White wig",
-  "wig-white-straight": "White straight wig",
-  "wig-white-wave": "White wave wig",
-};
-
 const galleryImages = Object.entries(imageModules).map(([path, src]) => {
   const fileName = path.split("/").pop().replace(".webp", "");
   return {
     src: src,
-    alt: customAlts[fileName] || fileName.replace(/-/g, " "),
-    large: fileName === "wig-straight-full",
+    alt: "something went wrong",
+    fileName: fileName,
+    large: fileName === "wig-10" || fileName === "wig-14",
   };
 });
 
+// UPDATED to your corrected names from screenshot
+const featuredNames = [
+  "bundle-curl",
+  "closure-4",
+  "frontal-8",
+  "wig-15",
+  "hair-extension-1",
+  "i-tips-1",
+  "clip-in-extension-1",
+  "wig-10",
+];
+
 export default function Gallery() {
+  const previewImages = galleryImages.filter(img => featuredNames.includes(img.fileName)).slice(0, 8);
+  const displayImages = previewImages.length >= 6 ? previewImages : galleryImages.slice(0, 8);
+
   return (
-    <section className="gallery-section" id="gallery">
+    <section className="gallery-section reveal" id="gallery">
       <div className="gallery-heading">
-        <div>
+        <div className="gallery-heading-left">
           <p className="eyebrow">THE COLLECTION IN FOCUS</p>
           <h2>Beauty in <span>every detail.</span></h2>
         </div>
-        <p>Discover the textures, movement and versatility that define the Rocking Hair experience.</p>
+        <div className="gallery-heading-right">
+          <p>Discover the textures, movement and versatility that define our experience.</p>
+          <a href="/gallery" className="text-link">
+            DISCOVER MORE →
+          </a>
+        </div>
       </div>
 
       <div className="gallery-grid">
-        {galleryImages.map((item) => (
-          <div key={item.alt} className={`gallery-item ${item.large ? "gallery-large" : ""}`}>
-            <img src={item.src} alt={item.alt} loading="lazy" />
+        {displayImages.map((item) => (
+          <div key={item.fileName} className={`gallery-item ${item.large ? "gallery-large" : ""}`}>
+            <img src={item.src} alt="something went wrong" loading="lazy" />
           </div>
         ))}
+      </div>
+
+      <div className="gallery-bottom-action">
+        <a href="/gallery" className="text-link">
+          EXPLORE GALLERY →
+        </a>
       </div>
     </section>
   );
