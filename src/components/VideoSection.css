@@ -43,6 +43,10 @@
   background: #000;
 }
 
+.video-caption{
+  color:aliceblue;
+  background-color: #483f36;}
+
 @media (max-width: 800px) {
   .video-section { padding: 90px 6%; }
   .video-heading { display: block; }
