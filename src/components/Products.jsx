@@ -1,8 +1,10 @@
 import "./Products.css";
 import closureCurlBlack from "../assets/product-images/closure-curl-black.webp";
 import straightBundlesBlack from "../assets/product-images/straight-bundles-black.webp";
-import frontalStraight from "../assets/product-images/frontal-straight.webp";
+import frontal4 from "../assets/product-images/frontal-4.webp";
 import multicolorWigs from "../assets/product-images/multicolor-wigs.webp";
+import iTipsImage from "../assets/product-images/i-tips-1.webp";
+import clipInImage from "../assets/product-images/clip-on-extension-1.webp";
 
 export default function Products() {
   return (
@@ -49,7 +51,7 @@ export default function Products() {
         </article>
         <article className="product-card reveal">
           <div className="product-placeholder">
-            <img src={frontalStraight} alt="Frontals" />
+            <img src={frontal4} alt="Frontals" />
           </div>
           <div className="product-info">
             <h3>Frontals</h3>
@@ -67,6 +69,32 @@ export default function Products() {
           <div className="product-info">
             <h3>Wigs</h3>
             <p>Discover versatile styles designed to complement your individual look.</p>
+            <div className="product-actions">
+              <a href="#enquiry">ENQUIRE →</a>
+              <a href="#gallery">VIEW MORE →</a>
+            </div>
+          </div>
+        </article>
+        <article className="product-card reveal">
+          <div className="product-placeholder">
+            <img src={iTipsImage} alt="I-Tips Extensions" />
+          </div>
+          <div className="product-info">
+            <h3>I-Tips</h3>
+            <p>Premium keratin I-tip extensions for natural movement, easy installation and long-lasting volume.</p>
+            <div className="product-actions">
+              <a href="#enquiry">ENQUIRE →</a>
+              <a href="#gallery">VIEW MORE →</a>
+            </div>
+          </div>
+        </article>
+        <article className="product-card reveal">
+          <div className="product-placeholder">
+            <img src={clipInImage} alt="Clip-in Extensions" />
+          </div>
+          <div className="product-info">
+            <h3>Clip-in Extensions</h3>
+            <p>Instant length and volume with secure clip-in wefts — perfect for quick styling and retail sales.</p>
             <div className="product-actions">
               <a href="#enquiry">ENQUIRE →</a>
               <a href="#gallery">VIEW MORE →</a>

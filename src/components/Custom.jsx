@@ -1,4 +1,4 @@
-import customHair from "../assets/product-images/custom-hair.webp";
+import customHair from "../assets/website-images/custom-hair.webp";
 import "./Custom.css";
 
 export default function Custom() {

@@ -1,4 +1,4 @@
-import heroHair from "../assets/product-images/hero-hair.webp";
+import heroHair from "../assets/website-images/hero-hair.webp";
 import "./Hero.css";
 
 export default function Hero() {

@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import Benefits from "./components/Benefits";
 import About from "./components/About";
 import Products from "./components/Products";
+import VideoSection from "./components/VideoSection";
 import Quality from "./components/Quality";
 import Custom from "./components/Custom";
 import Care from "./components/Care";
@@ -51,6 +52,7 @@ function App() {
         <Benefits />
         <About />
         <Products />
+        <VideoSection />
         <Quality />
         <Custom />
         <Care />
