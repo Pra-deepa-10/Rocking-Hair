@@ -1,4 +1,4 @@
-import logo from "../assets/rocking-hair-logo.png";
+import logo from "../assets/q-hairs-logo.png";
 import "./Footer.css";
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 import { FaWhatsapp, FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="footer" id="contact">
       <div className="footer-main">
         <div className="footer-brand">
-          <img src={logo} alt="Rocking Hair" />
+          <img src={logo} alt="Q-Hair" />
           <p>Premium Indian human hair crafted for natural beauty, versatility and timeless elegance.</p>
           <a href="#enquiry" className="footer-enquire">MAKE AN ENQUIRY →</a>
         </div>
@@ -64,7 +64,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© 2026 Rocking Hair Extensions. All rights reserved.</p>
+        <p>© 2026 Q-Hairs. All rights reserved.</p>
         <p>Premium Indian Human Hair · South India</p>
       </div>
     </footer>

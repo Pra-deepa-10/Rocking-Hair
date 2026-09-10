@@ -49,7 +49,7 @@ export default function FullGallery() {
       return {
         src,
         fileName,
-        alt: "something went wrong",
+        alt: fileName,
         category: getCategory(fileName),
       };
     });
@@ -70,7 +70,7 @@ export default function FullGallery() {
         <div className="full-gallery-hero">
           <p className="eyebrow">GALLERY</p>
           <h1>Our <span>Collection</span></h1>
-          <p className="full-gallery-desc">Real warehouse stock<br></br> 
+          <p className="full-gallery-desc">Real warehouse stock!<br></br>
           Customization available!</p>
           <div className="gallery-actions">
             <a href="/" className="gallery-back-btn">← Back to Home</a>
@@ -93,7 +93,7 @@ export default function FullGallery() {
         <div className="full-gallery-grid">
           {filtered.map((item) => (
             <div key={item.fileName} className="full-gallery-item" onClick={() => setLightbox(item)}>
-              <img src={item.src} alt="something went wrong" loading="lazy" />
+              <img src={item.src} alt={item.alt} loading="lazy" />
               <div className="gallery-item-overlay">
                 <span className="gallery-item-category">{item.category}</span>
               </div>
@@ -105,7 +105,7 @@ export default function FullGallery() {
           <div className="lightbox" onClick={() => setLightbox(null)}>
             <div className="lightbox-content" onClick={e => e.stopPropagation()}>
               <button className="lightbox-close" onClick={() => setLightbox(null)}>×</button>
-              <img src={lightbox.src} alt="something went wrong" />
+              <img src={lightbox.src} alt={lightbox.alt} />
               <div className="lightbox-info">
                 <p>{lightbox.category}</p>
                 <a href="#enquiry" onClick={(e) => { e.preventDefault(); setLightbox(null); setTimeout(() => document.getElementById("enquiry")?.scrollIntoView({ behavior: "smooth" }), 100); }} className="lightbox-enquire">Enquire Now →</a>

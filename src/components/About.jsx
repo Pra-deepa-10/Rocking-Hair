@@ -4,13 +4,13 @@ export default function About() {
   return (
     <section className="about-section reveal" id="about">
       <div className="about-content reveal reveal-left">
-        <p className="eyebrow">ABOUT ROCKING HAIR</p>
+        <p className="eyebrow">ABOUT Q-HAIRS</p>
         <h2>
           Crafted for beauty.
           <span> Designed for you.</span>
         </h2>
         <p className="about-intro">
-          Rocking Hair Extensions brings together the beauty of
+          Q-Hairs brings together the beauty of
           premium Indian human hair with craftsmanship, versatility
           and a deep understanding of hair.
         </p>

@@ -9,7 +9,7 @@ const galleryImages = Object.entries(imageModules).map(([path, src]) => {
   const fileName = path.split("/").pop().replace(".webp", "");
   return {
     src: src,
-    alt: "something went wrong",
+    alt: fileName,
     fileName: fileName,
     large: fileName === "wig-10" || fileName === "wig-14",
   };
@@ -49,7 +49,7 @@ export default function Gallery() {
       <div className="gallery-grid">
         {displayImages.map((item) => (
           <div key={item.fileName} className={`gallery-item ${item.large ? "gallery-large" : ""}`}>
-            <img src={item.src} alt="something went wrong" loading="lazy" />
+            <img src={item.src} alt={item.alt} loading="lazy" />
           </div>
         ))}
       </div>

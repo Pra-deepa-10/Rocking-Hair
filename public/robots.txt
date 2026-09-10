@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rocking-hair.vercel.app/sitemap.xml
+Sitemap: https://q-hairs.com/sitemap.xml

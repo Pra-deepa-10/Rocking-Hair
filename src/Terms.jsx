@@ -4,15 +4,15 @@ const Terms = () => {
       <div className="privacy-container">
 
         <a href="/" className="privacy-back">
-          ← Back to Rocking Hair
+          ← Back to Q-Hairs
         </a>
 
-        <p className="eyebrow">ROCKING HAIR EXTENSIONS</p>
+        <p className="eyebrow">Q-HAIRS</p>
 
         <h1>Terms & Disclaimer</h1>
 
         <p className="privacy-intro">
-          By using the Rocking Hair Extensions website, you agree to the
+          By using the Q-Hairs website, you agree to the
           following terms and understand the nature of the information
           provided on this website.
         </p>
@@ -62,7 +62,7 @@ const Terms = () => {
             <h2>Intellectual Property</h2>
             <p>
               The website content, branding, text, graphics, images and other
-              materials belonging to Rocking Hair Extensions may not be copied,
+              materials belonging to Q-Hairs may not be copied,
               reproduced or used without permission.
             </p>
           </section>
@@ -89,7 +89,7 @@ const Terms = () => {
           <section>
             <h2>Changes to These Terms</h2>
             <p>
-              Rocking Hair Extensions may update these terms when necessary.
+              Q-Hairs may update these terms when necessary.
               Any changes will be reflected on this page.
             </p>
           </section>
@@ -98,7 +98,7 @@ const Terms = () => {
             <h2>Contact</h2>
             <p>
               If you have questions regarding these terms or the information
-              provided on this website, please contact Rocking Hair Extensions
+              provided on this website, please contact Q-Hairs
               through the contact information available on our website.
             </p>
           </section>

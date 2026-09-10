@@ -1,4 +1,4 @@
-import logo from "../assets/rocking-hair-logo.png";
+import logo from "../assets/q-hairs-logo.png";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -9,8 +9,8 @@ export default function Navbar() {
       </div>
       <header className="navbar">
         <a href="/" className="logo">
-          <img src={logo} alt="Rocking Hair" />
-          <span>ROCKING HAIR</span>
+          <img src={logo} alt="Q-Hairs" />
+          <span>Q-HAIRS</span>
         </a>
         <nav className="nav-links">
           <a href="/">Home</a>

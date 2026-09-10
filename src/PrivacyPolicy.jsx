@@ -4,15 +4,15 @@ const PrivacyPolicy = () => {
       <div className="privacy-container">
 
         <a href="/" className="privacy-back">
-          ← Back to Rocking Hair
+          ← Back to Q-Hairs
         </a>
 
-        <p className="eyebrow">ROCKING HAIR EXTENSIONS</p>
+        <p className="eyebrow">Q-HAIRS</p>
 
         <h1>Privacy Policy</h1>
 
         <p className="privacy-intro">
-          At Rocking Hair Extensions, we respect your privacy and are committed
+          At Q-Hairs, we respect your privacy and are committed
           to protecting the information you provide through our website.
         </p>
 
@@ -83,7 +83,7 @@ const PrivacyPolicy = () => {
             <h2>Contact</h2>
             <p>
               If you have questions about this Privacy Policy, please contact
-              Rocking Hair Extensions through the contact information provided
+              Q-Hairs through the contact information provided
               on our website.
             </p>
           </section>

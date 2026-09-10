@@ -4,7 +4,7 @@ export default function Benefits() {
   return (
     <section className="benefits reveal" id="why-us">
       <div className="section-heading">
-        <p className="eyebrow">THE ROCKING HAIR STANDARD</p>
+        <p className="eyebrow">THE Q-HAIRS STANDARD</p>
         <h2>
           Beauty that feels
           <span> naturally yours.</span>

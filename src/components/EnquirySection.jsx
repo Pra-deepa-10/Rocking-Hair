@@ -72,7 +72,7 @@ export default function EnquirySection() {
         <h2>Let's find the<span> perfect match.</span></h2>
         <p>Tell us what you're looking for and our team will help you explore the right hair solution for your style and preferences.</p>
         <div className="enquiry-note">
-          <span>ROCKING HAIR EXTENSIONS</span>
+          <span>Q-HAIRS</span>
           <p>Premium Indian human hair for enquiries worldwide.</p>
         </div>
       </div>
@@ -132,7 +132,7 @@ export default function EnquirySection() {
           <span>✓</span>
           <div>
             <strong>Enquiry sent successfully</strong>
-            <p>Thank you for contacting Rocking Hair.</p>
+            <p>Thank you for contacting Q-Hairs.</p>
           </div>
         </div>
       )}
