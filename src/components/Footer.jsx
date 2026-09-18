@@ -45,21 +45,21 @@ export default function Footer() {
           </div>
           <div>
             <h3><FiMail style={{marginRight: '6px', color: '#D4AF37'}} /> Email Us</h3>
-            <a href="mailto:Vys.business@gmail.com">Vys.business@gmail.com</a>
+            <a href="mailto:vysbusiness.solution@gmail.com">vysbusiness.solution@gmail.com</a>
           </div>
           <div>
             <h3><FiPhone style={{marginRight: '6px', color: '#D4AF37'}} /> Call / WhatsApp Us</h3>
-            <a href="tel:+919994532455">+91 9994532455</a>
+            <a href="tel:+919042320950">+91 9042320950</a>
           </div>
           <p>Business Hours: 9:00 AM – 6:00 PM</p>
         </div>
         <div className="social-section">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="https://wa.me/919994532455" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><FaWhatsapp /></a>
-            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebookF /></a>
-            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
-            <a href="https://www.linkedin.com/in/shanmuga-sundaram-6418792a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedinIn /></a>
+            <a href="https://wa.me/919042320950" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><FaWhatsapp /></a>
+            <a href="https://www.facebook.com/people/Q-Hairs/61594150536557/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebookF /></a>
+            <a href="https://instagram.com/q_hairs_" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
+            <a href="https://www.linkedin.com/showcase/q-hairs" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedinIn /></a>
           </div>
         </div>
       </div>

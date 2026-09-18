@@ -23,7 +23,10 @@ function getCategory(fileName) {
 }
 
 export default function FullGallery() {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState(() => {
+  const params = new URLSearchParams(window.location.search);
+  return params.get("category") || "All";
+  });
   const [lightbox, setLightbox] = useState(null);
 
   useEffect(() => {

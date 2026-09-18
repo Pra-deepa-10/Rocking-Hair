@@ -119,6 +119,8 @@ export default function EnquirySection() {
             <option value="closures">Closures</option>
             <option value="frontals">Frontals</option>
             <option value="wigs">Wigs</option>
+            <option value="i-tips">i-Tips</option>
+            <option value="clip-ins">Clip-in-Extensions</option>
           </select>
         </div>
         <div className="form-group reveal">

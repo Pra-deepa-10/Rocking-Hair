@@ -50,6 +50,19 @@ function App() {
     return () => observer.disconnect();
   }, []);
 
+  //Hash Navigation
+    useEffect(() => {
+    if (window.location.hash) {
+      const id = window.location.hash.substring(1);
+
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }, 100);
+    }
+  }, []);
+
   return (
     <>
       <Navbar />

@@ -21,7 +21,7 @@ export default function Navbar() {
           <a href="/gallery">Gallery</a>
           <a href="/#contact">Contact Us</a>
         </nav>
-        <a href="/#enquiry" className="enquire-btn">
+        <a href={window.location.pathname === "/gallery" ? "#enquiry" : "/#enquiry"} className="enquire-btn">
           ENQUIRE NOW
         </a>
       </header>

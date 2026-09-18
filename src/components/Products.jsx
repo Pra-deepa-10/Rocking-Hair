@@ -1,6 +1,6 @@
 import "./Products.css";
 import closures from "../assets/product-images/closure-5.webp";
-import extensions from "../assets/product-images/bundle-straight.webp";
+import extensions from "../assets/product-images/hair-extension-15.webp";
 import frontals from "../assets/product-images/frontal-4.webp";
 import wigs from "../assets/product-images/wig-16.webp";
 import iTips from "../assets/product-images/i-tips-1.webp";
@@ -32,7 +32,7 @@ export default function Products() {
             <p>Add length, volume and movement with beautifully crafted hair extensions.</p>
             <div className="product-actions">
               <a href="#enquiry">ENQUIRE →</a>
-              <a href="#gallery">VIEW MORE →</a>
+              <a href="/gallery?category=Extensions%20%26%20Bundles">VIEW MORE →</a>
             </div>
           </div>
         </article>
@@ -45,7 +45,7 @@ export default function Products() {
             <p>Designed to create a natural-looking finish and seamless styling possibilities.</p>
             <div className="product-actions">
               <a href="#enquiry">ENQUIRE →</a>
-              <a href="#gallery">VIEW MORE →</a>
+              <a href="/gallery?category=Closures">VIEW MORE →</a>
             </div>
           </div>
         </article>
@@ -58,7 +58,7 @@ export default function Products() {
             <p>Enhance your hairline with versatile options designed for a refined, natural appearance.</p>
             <div className="product-actions">
               <a href="#enquiry">ENQUIRE →</a>
-              <a href="#gallery">VIEW MORE →</a>
+              <a href="/gallery?category=Frontals">VIEW MORE →</a>
             </div>
           </div>
         </article>
@@ -71,7 +71,7 @@ export default function Products() {
             <p>Discover versatile styles designed to complement your individual look.</p>
             <div className="product-actions">
               <a href="#enquiry">ENQUIRE →</a>
-              <a href="#gallery">VIEW MORE →</a>
+              <a href="/gallery?category=Wigs">VIEW MORE →</a>
             </div>
           </div>
         </article>
@@ -84,7 +84,7 @@ export default function Products() {
             <p>Premium keratin I-tip extensions for natural movement, easy installation and long-lasting volume.</p>
             <div className="product-actions">
               <a href="#enquiry">ENQUIRE →</a>
-              <a href="#gallery">VIEW MORE →</a>
+              <a href="/gallery?category=I-Tips">VIEW MORE →</a>
             </div>
           </div>
         </article>
@@ -97,7 +97,7 @@ export default function Products() {
             <p>Instant length and volume with secure clip-in wefts — perfect for quick styling and retail sales.</p>
             <div className="product-actions">
               <a href="#enquiry">ENQUIRE →</a>
-              <a href="#gallery">VIEW MORE →</a>
+              <a href="/gallery?category=Clip-in">VIEW MORE →</a>
             </div>
           </div>
         </article>
